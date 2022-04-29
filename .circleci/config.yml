@@ -204,8 +204,8 @@ jobs:
             command: |
               ansible-playbook -i /tmp/.circleci/ansible/inventory.txt .circleci/ansible/configure-server.yml
 
-        - destroy-environment:
-            workflow_id: ${CIRCLE_WORKFLOW_ID:0:7}         
+#         - destroy-environment:
+#             workflow_id: ${CIRCLE_WORKFLOW_ID:0:7}         
 #   run-migrations:
 #     docker:
 #       # Docker image here that supports NodeJS
